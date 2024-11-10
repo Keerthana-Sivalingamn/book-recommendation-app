@@ -1,0 +1,118 @@
+.book-list-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: #69f5f7;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-list-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px #aaa;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #3498db;
+    border-radius: 8px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search-input:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+.loading-text,
+.error-text,
+.no-books-text {
+    text-align: center;
+    color: #1286eb;
+    font-size: 1.5em;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.book-card {
+    background-color: #b4e95f;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.book-title {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.add-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #2980b9;
+}
+
+.like-button {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #e74c3c;
+    transition: transform 0.2s ease;
+}
+
+.like-button:hover {
+    transform: scale(1.1);
+}
+
+.book-details-grid {
+    display: grid;
+    gap: 5px;
+    text-align: left;
+    color: #34495e;
+    font-size: 1em;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+}

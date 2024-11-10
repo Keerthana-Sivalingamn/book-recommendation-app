@@ -1,0 +1,85 @@
+.about-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f1ea;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 60px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  
+  /* Purpose Section with Image Overlay */
+  .purpose-section {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .image-overlay-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+  }
+  
+  .overlay-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .overlay-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Review Section */
+  .review-section {
+    padding: 20px;
+    font-style: italic;
+    background-color: #f5f1ea;
+  }
+  
+  .review-quote {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .review-rating {
+    font-weight: bold;
+    color: #555;
+  }
+  

@@ -1,38 +1,70 @@
-.App {
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar container to center items */
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Align items vertically in the middle */
+  max-width: 1000px; /* Set max width for better layout control */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Each list item inside the navbar */
+.nav-links li {
+  margin: 0 15px; /* Horizontal spacing between items */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Navbar links styles */
+.nav-links a {
   color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px; /* Add padding for better clickability */
+  display: block;
 }
 
-.App-link {
-  color: #61dafb;
+/* Navbar links on hover */
+.nav-links a:hover {
+  background-color: #575757;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Dropdown Menu Styles (Remove dropdown as you no longer need it) */
+.dropdown {
+  display: none; /* We are not using dropdown now */
+}
+
+/* Optional: Dropdown menu specific styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-link {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-link:hover {
+  background-color: #575757;
 }

@@ -1,0 +1,201 @@
+/* Book Details Styles */
+.book-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Image Styling */
+.book-image-container {
+    width: 100%;
+    max-width: 450px;  /* Reduced max-width slightly to make the image smaller */
+    height: auto;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.details-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder image */
+.placeholder-image {
+    width: 100%;
+    height: 400px;  /* Slightly reduced height for the placeholder image */
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-size: 1.2em;
+    border-radius: 12px;
+}
+
+/* Content Area Styling */
+.details-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Title and Text Styling */
+.details-content h3 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.details-content p {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.details-content strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Buttons Styling */
+.button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.add-button,
+.comment-button,
+.read-button {
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.add-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.comment-button {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.comment-button:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+
+.read-button {
+    background-color: #f39c12;
+    color: white;
+}
+
+.read-button:hover {
+    background-color: #e67e22;
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .book-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-image-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .details-content {
+        width: 100%;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-button,
+    .comment-button,
+    .read-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    /* Reviews Section Container */
+.reviews-section {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #333;
+  }
+  
+  /* Heading Style for Reviews Section */
+  .reviews-section h4 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Individual Review Container */
+  .review {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Style for Username and Review Text */
+  .review strong {
+    color: #333;
+    font-size: 1rem;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .review p {
+    color: #555;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  
+  /* Style for Rating */
+  .review p:nth-of-type(2) { /* Targets the Rating line */
+    font-weight: bold;
+    color: #f39c12; /* Yellow/orange color for rating */
+    margin-top: 5px;
+  }
+  
+  /* Style for Timestamp */
+  .review small {
+    font-size: 0.85rem;
+    color: #888;
+    display: block;
+    margin-top: 5px;
+  }
+  
+}

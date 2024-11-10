@@ -1,0 +1,119 @@
+/* Main container for login page */
+.login-container {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f6f9;
+    justify-content: flex-start;  /* Aligns content to the left, allowing more space for the image */
+    align-items: center;      /* Centers the login box vertically */
+}
+
+/* Styling for the image container */
+.login-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f6f9;
+    overflow: hidden;  /* Prevents any overflow */
+}
+
+/* Image styling */
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 10px;
+}
+
+/* Styling for the login box */
+.login-box {
+    flex: 0 1 auto;  /* Ensures the box doesn't stretch but remains centered */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 320px;  /* Reduced width for the login box */
+    width: 100%;  /* Ensures it's responsive */
+    margin-left: 30px;  /* Moves the box slightly to the left */
+}
+
+/* Header text inside the login box */
+.login-box h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Styling for the form in the login box */
+.login-box form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input fields for email and password */
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button styling */
+.login-box button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Button hover effect */
+.login-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Signup link styling */
+.signup-link {
+    margin-top: 1rem;
+    color: #333;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Hover effect for signup link */
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;  /* Stacks the image and login box vertically */
+        justify-content: center;  /* Centers both vertically */
+    }
+
+    .login-box {
+        max-width: 90%;  /* Adjusts the login box to be smaller on mobile */
+        margin: 10px;
+        margin-left: 0;  /* Removes the left margin on small screens */
+    }
+}

@@ -1,0 +1,101 @@
+.about-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f5f1ea;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #520447;
+  color: #fff;
+  padding: 60px 20px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Category Stack */
+.category-section {
+  padding: 40px 20px;
+}
+
+.category-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.category-stack {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.category {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Purpose Section */
+.purpose-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #e5e0d8;
+  margin: 20px 0;
+}
+
+.purpose-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.purpose-text {
+  max-width: 700px;
+  text-align: center;
+}
+
+.purpose-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.purpose-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Review Section */
+.review-section {
+  padding: 20px;
+  font-style: italic;
+  background-color: #f5f1ea;
+}
+
+.review-quote {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.review-rating {
+  font-weight: bold;
+  color: #555;
+}

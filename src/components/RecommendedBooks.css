@@ -1,0 +1,98 @@
+.recommended-books {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .category-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .category-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .book-list-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Flexible grid */
+    gap: 30px; /* Increase space between the books */
+    justify-items: center; /* Centers the items in each grid cell */
+    margin-top: 20px;
+    padding: 0 10px; /* Adds padding to the left and right of the book list */
+  }
+  
+  .book-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 220px;
+  }
+  
+  .book-item:hover {
+    transform: translateY(-10px); /* Hover effect */
+  }
+  
+  .book-image {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .book-details h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .book-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 3px 0;
+  }
+  
+  .book-details p.authors {
+    color: #007bff; /* Author names in blue */
+  }
+  
+  .load-more {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .load-more:hover {
+    background-color: #218838;
+  }
+  
