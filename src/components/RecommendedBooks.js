@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import './RecommendedBooks.css';
 
 const RecommendedBooks = () => {
@@ -18,6 +19,7 @@ const RecommendedBooks = () => {
   const [loading, setLoading] = useState(false);
   const [startIndex, setStartIndex] = useState(0);
   const [totalItems, setTotalItems] = useState(0);
+  const navigate = useNavigate();
 
   const handleCategorySelect = async (category) => {
     setSelectedCategory(category);
@@ -56,6 +58,10 @@ const RecommendedBooks = () => {
       handleCategorySelect(selectedCategory); // Fetch more books
     }
   };
+  const handleBookClick = (id) => {
+    navigate(`/book/${id}`);
+  };
+
 
   return (
     <div className="recommended-books">

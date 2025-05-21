@@ -3,9 +3,11 @@ const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
-require('dotenv').config();
 
 const router = express.Router();
+
+// Define your JWT secret directly here
+const JWT_SECRET = "L7UMHK8DWJEbdPEzql2NS2TS5mnv8kzb4BFZQhGxj0I="; // Replace with your actual JWT secret
 
 // Signup Route
 router.post('/signup', async (req, res) => {
@@ -14,9 +16,10 @@ router.post('/signup', async (req, res) => {
         const userExists = await User.findOne({ email });
         if (userExists) return res.status(400).json({ message: 'User already exists.' });
 
-        const user = new User({ username, email, password });
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const user = new User({ username, email, password: hashedPassword });
         await user.save();
-        console.log("User created with hashed password:", newUser.password);
+        console.log("User created with hashed password:", hashedPassword);
 
         res.status(201).json({ message: 'User registered successfully!' });
     } catch (error) {
@@ -37,7 +40,7 @@ router.post('/login', async (req, res) => {
         const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) return res.status(400).json({ message: 'Invalid credentials.' });
 
-        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+        const token = jwt.sign({ id: user._id }, JWT_SECRET, { expiresIn: '1h' });
         res.status(200).json({ token, message: 'Login successful!' });
     } catch (error) {
         console.error("Login error:", error);

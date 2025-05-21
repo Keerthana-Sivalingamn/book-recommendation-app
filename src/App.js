@@ -10,6 +10,7 @@ import Signup from './components/Signup';
 import SubmitReview from './components/SubmitReview'; // Import SubmitReview
 import LogoutButton from './components/LogoutButton'; // Import LogoutButton
 import AboutPage from "./components/AboutPage";
+import BookInfo from './components/BookInfo';
 
 import './App.css';
 
@@ -110,6 +111,16 @@ function App() {
                             <Navigate to="/" />
                         } 
                     />
+                    <Route 
+                      path="/book/:id"  // Updated to match the dynamic book id
+                      element={
+                      isAuthenticated ? 
+                      <BookInfo /> : 
+                          <Navigate to="/" />
+                       } 
+/>
+
+                    
                     <Route 
                         path="/my-books" 
                         element={

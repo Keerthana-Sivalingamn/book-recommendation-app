@@ -7,7 +7,8 @@ const router = express.Router();
 router.post('/add', authenticate, async (req, res) => {
   try {
     const { bookId, reviewText, rating } = req.body;
-    const userId = req.userId; // Get userId from the authenticated user
+    const userId = req.user.userId;// Get userId from the authenticated user
+    console.log(userId);
 
     // Validate the incoming data
     if (!bookId || !reviewText || !rating) {

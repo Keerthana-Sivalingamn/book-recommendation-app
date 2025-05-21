@@ -1,11 +1,9 @@
-/* Signup.css */
-
 .signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: lightseagreen;
+    background: rgb(128, 49, 212);
 }
 
 .signup-box {
@@ -28,6 +26,7 @@
     flex-direction: column;
 }
 
+.signup-box input[type="text"],
 .signup-box input[type="email"],
 .signup-box input[type="password"] {
     padding: 0.8rem;
